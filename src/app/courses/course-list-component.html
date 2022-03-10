@@ -23,7 +23,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let course of _courses">
+        <tr *ngFor="let course of filteredCourses">
             <td><img [src]="course.imageUrl" width="25" height="25"></td>
             <td>{{ course.name }}</td>
             <td>{{ course.price }}</td>
