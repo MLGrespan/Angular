@@ -9,7 +9,7 @@ import { StarComponent } from './star/star.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavbarComponent } from './nav-bar/nav-bar-component';
 import { Error404Component } from './error-404/error-404Component';
-import { CourseInfoComponent } from './courses/courses-info-component';
+import { CourseInfoComponent } from './courses/course-info-component';
 
 @NgModule({
     declarations: [
@@ -29,7 +29,7 @@ import { CourseInfoComponent } from './courses/courses-info-component';
                 path: 'courses', component: CourseListComponent
             },
             {
-                path: 'course/info/:id', component: CourseInfoComponent
+                path: 'courses/info/:id', component: CourseInfoComponent
             },            
             {
                 path: '',  redirectTo: 'courses', pathMatch: 'full'
